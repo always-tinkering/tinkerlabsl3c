@@ -106,6 +106,8 @@ export default function Index() {
             </div>
 
             <div className="flex flex-wrap items-center mt-32">
+
+              <div className="w-full px-4 ml-auto mr-auto md:w-4/12">
               <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
                 <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center bg-white rounded-full shadow-lg text-blueGray-500">
                   <i className="text-xl fas fa-user-friends"></i>
@@ -131,8 +133,6 @@ export default function Index() {
                 </p>
                 
               </div>
-
-              <div className="w-full px-4 ml-auto mr-auto md:w-4/12">
                 <div className="relative flex flex-col w-full min-w-0 mb-6 break-words bg-white rounded-lg shadow-lg bg-blueGray-700">
                   <img
                     alt="..."
@@ -159,11 +159,28 @@ export default function Index() {
                     </p>
                   </blockquote>
                 </div>
+                <div className="w-full px-4 ml-auto mr-auto md:w-4/12">
+                <img
+                  alt="..."
+                  className="max-w-full rounded-lg shadow-lg"
+                  src="https://images.unsplash.com/photo-1519033504649-ff52b3119bbf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyaW5nJTIwZ3JlYXRseXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=60"
+                />
+              </div>
+              <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
+                <div className="md:pr-12">
+                  <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center rounded-full shadow-lg text-blueGray-500 bg-blueGray-200">
+                    <i className="text-xl fas fa-rocket"></i>
+                  </div>
+                  <h3 className="text-3xl font-semibold">A growing company</h3>
+                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                    Do you want to start your journey with us? Let's see if we are a good fit for eachother, reach out below. Just after you meet OUR TEAM!
+                  </p>
+                </div>
+              </div>
               </div>
             </div>
           </div>
         </section>
-
         <section className="relative py-20">
           <div
             className="absolute top-0 left-0 right-0 bottom-auto w-full h-20 -mt-20 overflow-hidden pointer-events-none"
@@ -187,25 +204,7 @@ export default function Index() {
 
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap items-center">
-              <div className="w-full px-4 ml-auto mr-auto md:w-4/12">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1519033504649-ff52b3119bbf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyaW5nJTIwZ3JlYXRseXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=60"
-                />
-              </div>
-              <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
-                <div className="md:pr-12">
-                  <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center rounded-full shadow-lg text-blueGray-500 bg-blueGray-200">
-                    <i className="text-xl fas fa-rocket"></i>
-                  </div>
-                  <h3 className="text-3xl font-semibold">A growing company</h3>
-                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    Do you want to start your journey with us? Let's see if we are a good fit for eachother, reach out below. Just after you meet OUR TEAM!
-                  </p>
-
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>
@@ -320,17 +319,12 @@ export default function Index() {
             </svg>
           </div>
 
-          <div className="container px-4 mx-auto lg:pt-24 lg:pb-64">
+          <div className="container px-4 mx-auto lg:pt-12 lg:pb-64">
             <div className="flex flex-wrap justify-center text-center">
               <div className="w-full px-4 lg:w-6/12">
                 <h2 className="text-4xl font-semibold text-white">
-                  Build something
+                  Let's Build Something Together
                 </h2>
-                <p className="mt-4 mb-4 text-lg leading-relaxed text-blueGray-400">
-                  Put the potentially record low maximum sea ice extent tihs
-                  year down to low ice. According to the National Oceanic and
-                  Atmospheric Administration, Ted, Scambos.
-                </p>
               </div>
             </div>
             <div className="flex flex-wrap justify-center mt-12">
@@ -339,11 +333,10 @@ export default function Index() {
                   <i className="text-xl fas fa-medal"></i>
                 </div>
                 <h6 className="mt-5 text-xl font-semibold text-white">
-                  Excelent Services
+                  Idea
                 </h6>
                 <p className="mt-2 mb-4 text-blueGray-400">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  We will work with you to hash out your product concept. 
                 </p>
               </div>
               <div className="w-full px-4 text-center lg:w-3/12">
@@ -351,11 +344,10 @@ export default function Index() {
                   <i className="text-xl fas fa-poll"></i>
                 </div>
                 <h5 className="mt-5 text-xl font-semibold text-white">
-                  Grow your market
+                  Market Analysis
                 </h5>
                 <p className="mt-2 mb-4 text-blueGray-400">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  We will review and test the market to validate your product's validaty.
                 </p>
               </div>
               <div className="w-full px-4 text-center lg:w-3/12">
@@ -363,11 +355,10 @@ export default function Index() {
                   <i className="text-xl fas fa-lightbulb"></i>
                 </div>
                 <h5 className="mt-5 text-xl font-semibold text-white">
-                  Launch time
+                  Launch
                 </h5>
                 <p className="mt-2 mb-4 text-blueGray-400">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  We will assist you in getting your product out into the market.
                 </p>
               </div>
             </div>
