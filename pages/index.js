@@ -96,9 +96,9 @@ export default function Index() {
                     <div className="inline-flex items-center justify-center w-12 h-12 p-3 mb-5 text-center text-white rounded-full shadow-lg bg-emerald-400">
                       <i className="fas fa-heartbeat"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Low Profit company</h6>
+                    <h6 className="text-xl font-semibold">Low Profit company (L3C)</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Tinker Labs L3C, prides itself on being a company to pay it forward through the generations to come.
+                      Tinker Labs, prides itself on being a company to pay it forward into the generations to come.
                     </p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Index() {
               </div>
               <div className="w-full px-4 ml-auto mr-auto md:w-5/12">
                 <div className="md:pr-12">
-                  <div className="inline-flex items-center justify-center w-16 h-16 p-3 mb-6 text-center rounded-full shadow-lg text-blueGray-500 bg-blueGray-200">
+                  <div className="inline-flex items-center justify-center w-16 h-16 p-6 mt-4 mb-3 text-center rounded-full shadow-lg text-blueGray-500 bg-blueGray-200">
                     <i className="text-xl fas fa-rocket"></i>
                   </div>
                   <h3 className="text-3xl font-semibold">A growing company</h3>
@@ -223,7 +223,7 @@ export default function Index() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="/img/IMG_4010.jpg"
+                    src="/img/germann_headshot.jpg"
                     className="mx-auto rounded-full shadow-lg max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -248,7 +248,7 @@ export default function Index() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="/img/team-4-470x470.png"
+                    src="/img/layde_headshot.jpg"
                     className="mx-auto rounded-full shadow-lg max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -349,7 +349,7 @@ export default function Index() {
                 <h5 className="mt-5 text-xl font-semibold text-white">
                   Launch
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-8 text-blueGray-400">
                 We will assist you in getting your product out into the market.
                 </p>
               </div>
@@ -361,7 +361,7 @@ export default function Index() {
             <div className="flex flex-wrap justify-center -mt-48 lg:-mt-64">
               <div className="w-full px-4 lg:w-6/12">
                 <div className="relative flex flex-col w-full min-w-0 mb-6 break-words rounded-lg shadow-lg bg-blueGray-200">
-                  <form className="flex-auto p-5 lg:p-10">
+                  <form className="flex-auto p-5 lg:p-10" action="https://formsubmit.co/andrew@tinkerlabs.dev" method="POST">
                     <h4 className="text-2xl font-semibold">
                       Want to work with us?
                     </h4>
@@ -379,6 +379,7 @@ export default function Index() {
                       <input
                         type="text"
                         name="fullName"
+                        required
                         className="w-full px-3 py-3 text-sm transition-all duration-150 ease-linear bg-white border-0 rounded shadow placeholder-blueGray-300 text-blueGray-600 focus:outline-none focus:ring"
                         placeholder="Full Name"
                       />
@@ -394,6 +395,7 @@ export default function Index() {
                       <input
                         type="email"
                         name="email"
+                        required
                         className="w-full px-3 py-3 text-sm transition-all duration-150 ease-linear bg-white border-0 rounded shadow placeholder-blueGray-300 text-blueGray-600 focus:outline-none focus:ring"
                         placeholder="Email"
                       />
@@ -406,13 +408,17 @@ export default function Index() {
                       >
                         Message
                       </label>
-                      <input
+                      <textarea
+                        name="message"
                         rows="4"
                         cols="80"
+                        required
                         className="w-full px-3 py-3 text-sm bg-white border-0 rounded shadow placeholder-blueGray-300 text-blueGray-600 focus:outline-none focus:ring"
                         placeholder="Type a message..."
                       />
                     </div>
+                    <input type="hidden" name="_next" value="https://www.tinkerlabs.dev"/>
+                    <input type="hidden" name="_captcha" value="false"/>
                     <div className="mt-6 text-center">
                       <button
                         className="px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none bg-blueGray-800 active:bg-blueGray-600 hover:shadow-lg focus:outline-none"
