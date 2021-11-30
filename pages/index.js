@@ -361,7 +361,7 @@ export default function Index() {
             <div className="flex flex-wrap justify-center -mt-48 lg:-mt-64">
               <div className="w-full px-4 lg:w-6/12">
                 <div className="relative flex flex-col w-full min-w-0 mb-6 break-words rounded-lg shadow-lg bg-blueGray-200">
-                  <div className="flex-auto p-5 lg:p-10">
+                  <form className="flex-auto p-5 lg:p-10">
                     <h4 className="text-2xl font-semibold">
                       Want to work with us?
                     </h4>
@@ -378,6 +378,7 @@ export default function Index() {
                       </label>
                       <input
                         type="text"
+                        name="fullName"
                         className="w-full px-3 py-3 text-sm transition-all duration-150 ease-linear bg-white border-0 rounded shadow placeholder-blueGray-300 text-blueGray-600 focus:outline-none focus:ring"
                         placeholder="Full Name"
                       />
@@ -392,6 +393,7 @@ export default function Index() {
                       </label>
                       <input
                         type="email"
+                        name="email"
                         className="w-full px-3 py-3 text-sm transition-all duration-150 ease-linear bg-white border-0 rounded shadow placeholder-blueGray-300 text-blueGray-600 focus:outline-none focus:ring"
                         placeholder="Email"
                       />
@@ -404,7 +406,7 @@ export default function Index() {
                       >
                         Message
                       </label>
-                      <textarea
+                      <input
                         rows="4"
                         cols="80"
                         className="w-full px-3 py-3 text-sm bg-white border-0 rounded shadow placeholder-blueGray-300 text-blueGray-600 focus:outline-none focus:ring"
@@ -414,12 +416,12 @@ export default function Index() {
                     <div className="mt-6 text-center">
                       <button
                         className="px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none bg-blueGray-800 active:bg-blueGray-600 hover:shadow-lg focus:outline-none"
-                        type="button"
+                        type="submit"
                       >
                         Send Message
                       </button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
